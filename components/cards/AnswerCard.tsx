@@ -32,8 +32,6 @@ const AnswerCard = ({
 }: Props) => {
   const showActionButton = clerkId && clerkId === author.clerkId;
 
-  console.log("AnswerCard -> showActionButton", question);
-
   return (
     <Link
       href={`/question/${question?._id}/#${_id}`}
